@@ -26,7 +26,7 @@
 #include <FL/Fl_Text_Buffer.H>
 #include <FL/Fl_Text_Editor.H>
 #include <FL/filename.H>
-#include <FL/Fl_ComboBox.h>
+//#include <FL/Fl_ComboBox.h>
 
 //using namespace Scintilla;
 

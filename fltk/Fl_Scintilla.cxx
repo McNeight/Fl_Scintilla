@@ -836,7 +836,7 @@ void Fl_Scintilla::StartDrag()
 		Fl::copy(drag_str_, drag_str_size_, 0);
 	}
 
-#if __FLTK_MACOSX__
+#if __APPLE__
 	Fl_X::dnd(1);
 #else
 	Fl::dnd();
@@ -862,7 +862,7 @@ int Fl_Scintilla::DragOver()
 		Scintilla::Point pt = Scintilla::Point::FromInts(Fl::event_x()-swt_.rc_client.x, Fl::event_y()-swt_.rc_client.y);
 		SetDragPosition(SPositionFromLocation(pt, false, false, UserVirtualSpace()));
 
-#if __FLTK_WIN32__
+#if WIN32
 		Fl::wait(0);
 #endif
 
@@ -1209,7 +1209,7 @@ void Fl_Scintilla::RefreshIME()
 	int x = Scintilla::RoundXYPosition(pos.x)+swt_.rc_client.x;
 	int y = Scintilla::RoundXYPosition(pos.y)+swt_.rc_client.y;
 	int height = fl_height(labelfont(), labelsize());
-#ifdef __FLTK_MACOSX__
+#ifdef __APPLE__
 	Fl::insertion_point_location(x, y+height, height);
 #else
 	fl_set_spot(labelfont(), labelsize(), x, y+height, w(), h(), window());

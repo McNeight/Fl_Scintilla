@@ -1,3 +1,10 @@
+// Scintilla source code edit control
+/** @file PlatFLTK.h
+ ** Implementation of platform facilities on FLTK.
+ **/
+// Copyright 1998-2011 by Neil Hodgson <neilh@scintilla.org>
+// The License.txt file describes the conditions under which this software may be distributed.
+
 // Copyright 2015-2016 by cyantree <cyantree.guo@gmail.com>
 
 #ifndef PLATFLTK_H
@@ -141,7 +148,7 @@ public:
 	{
 		Close();
 		cd = iconv_open(to_charset, from_charset);
-#if __FLTK_MACOSX__ || __FLTK_IPHONEOS__
+#if __APPLE__
 		if ( (uintptr_t)cd > 0 ) return 1;
 #else
 		if ( (int)cd > 0 ) return 1;
@@ -151,7 +158,7 @@ public:
 
 	void Close()
 	{
-#if __FLTK_MACOSX__ || __FLTK_IPHONEOS__
+#if __APPLE__
 		if ( (uintptr_t)cd > 0 ) iconv_close(cd);
 #else
 		if ( (int)cd > 0 ) iconv_close(cd);
@@ -161,7 +168,7 @@ public:
 
 	int GetLength(char *src, int len)
 	{
-#if __FLTK_MACOSX__ || __FLTK_IPHONEOS__
+#if __APPLE__
 		if ( (uintptr_t)cd > 0 ) {
 #else
 		if ( (int)cd > 0 ) {
@@ -189,7 +196,7 @@ public:
 		char **pout = &outbuf;
 		int len = outlen;
 
-#if __FLTK_MACOSX__ || __FLTK_IPHONEOS__
+#if __APPLE__
 		if ( (uintptr_t)cd > 0 ) {
 #else
 		if ( (int)cd > 0 ) {

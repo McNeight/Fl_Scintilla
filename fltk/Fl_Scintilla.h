@@ -66,12 +66,12 @@
 #endif
 
 #include "PlatFLTK.h"
-#include "Fl.H"
-#include "fl_draw.H"
-#include "Fl_Group.H"
-#include "Fl_Widget.H"
-#include "Fl_Scrollbar.H"
-#include "Fl_Window.H"
+#include "FL/Fl.H"
+#include "FL/fl_draw.H"
+#include "FL/Fl_Group.H"
+#include "FL/Fl_Widget.H"
+#include "FL/Fl_Scrollbar.H"
+#include "FL/Fl_Window.H"
 #include "FL/Fl_Menu_Button.H"
 #include "FL/Fl_Double_Window.H"
 #include "FL/Fl_Box.H"
@@ -189,7 +189,7 @@ protected:
 	static void cb_popmenu(Fl_Widget *widget, void *data)
 	{
 		Fl_Scintilla *sci = (Fl_Scintilla *)(widget->user_data());
-#if __FLTK_MACOSX__ || __FLTK_IPHONEOS__
+#if __APPLE__
 		int cmd = (uintptr_t)data;
 #else
 		int cmd = (int)data;

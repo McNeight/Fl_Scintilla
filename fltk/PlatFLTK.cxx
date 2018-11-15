@@ -1,3 +1,10 @@
+// Scintilla source code edit control
+/** @file PlatFLTK.cxx
+ ** Implementation of platform facilities on FLTK.
+ **/
+// Copyright 1998-2003 by Neil Hodgson <neilh@scintilla.org>
+// The License.txt file describes the conditions under which this software may be distributed.
+ 
 // Copyright 2015-2016 by cyantree <cyantree.guo@gmail.com>
 
 #include <stdlib.h>
@@ -1097,20 +1104,20 @@ double Scintilla::ElapsedTime::Duration(bool reset)
 }
 
 // ====================== Platform::DynamicLibrary ok ===================================
-#if !__FLTK_WIN32__
+#if !WIN32
 #include <dlfcn.h>
 #endif
 
 class DynamicLibraryImpl : public Scintilla::DynamicLibrary {
 protected:
-#if __FLTK_WIN32__ || __FLTK_WINCE__
+#if WIN32
 	HMODULE h;
 #else
 	void * h;
 #endif
 public:
 	explicit DynamicLibraryImpl(const char *modulePath) {
-#if __FLTK_WIN32__ || __FLTK_WINCE__
+#if WIN32
 		h = ::LoadLibraryA(modulePath);
 #else
 		h = dlopen(modulePath, RTLD_LAZY);
@@ -1118,7 +1125,7 @@ public:
 	}
 
 	virtual ~DynamicLibraryImpl() {
-#if __FLTK_WIN32__ || __FLTK_WINCE__
+#if WIN32
 		if (h != NULL) ::FreeLibrary(h);
 #else
 		if ( h != NULL ) dlclose(h);
@@ -1127,7 +1134,7 @@ public:
 
 	// Use GetProcAddress to get a pointer to the relevant function.
 	virtual Scintilla::Function FindFunction(const char *name) {
-#if __FLTK_WIN32__ || __FLTK_WINCE__
+#if WIN32
 		if (h != NULL) {
 			// C++ standard doesn't like casts between function pointers and void pointers so use a union
 			union {
