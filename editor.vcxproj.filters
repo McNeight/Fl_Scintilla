@@ -1,0 +1,1836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{73cf9e69-fe28-4194-9854-67f11840149b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{923d7627-e540-4d39-839f-95ec1044cefb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lexers">
+      <UniqueIdentifier>{f58b15d5-b3f6-4a57-a688-f8fab55d76fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FL">
+      <UniqueIdentifier>{5c877c3f-9b6f-46df-abfc-4a80570b4148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lexlib">
+      <UniqueIdentifier>{b52989b8-a2f0-46ac-a0f7-831ea99ebbea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk">
+      <UniqueIdentifier>{ea275a50-8a58-409e-958e-ed8ee2383c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3fd2ca01-7489-4f39-9543-bfdb7b631cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iconv">
+      <UniqueIdentifier>{a184700d-4122-431d-9603-b5e321da1133}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test_editor.cxx">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexA68k.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAbaqus.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAda.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAPDL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAsm.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAsn1.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexASY.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAU3.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAVE.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexAVS.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBaan.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBash.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBasic.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBatch.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBibTeX.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexBullant.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCaml.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCLW.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCmake.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCOBOL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCoffeeScript.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexConf.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCPP.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCrontab.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCsound.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexCSS.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexD.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexDiff.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexDMAP.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexDMIS.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexECL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexEiffel.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexErlang.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexErrorList.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexEScript.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexFlagship.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexForth.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexFortran.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexGAP.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexGui4Cli.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexHaskell.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexHex.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexHTML.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexInno.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexKix.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexKVIrc.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexLaTeX.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexLisp.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexLout.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexLua.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMagik.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMake.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMarkdown.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMatlab.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMetapost.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMMIXAL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexModula.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMPT.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMSSQL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexMySQL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexNimrod.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexNsis.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexNull.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexOpal.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexOScript.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPascal.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPB.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPerl.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPLM.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPO.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPOV.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPowerPro.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPowerShell.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexProgress.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexProps.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPS.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexPython.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexR.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexRebol.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexRegistry.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexRuby.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexRust.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexScriptol.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSmalltalk.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSML.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSorcus.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSpecman.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSpice.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSQL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexSTTXT.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTACL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTADS3.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTAL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTCL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTCMD.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTeX.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexTxt2tags.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexVB.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexVerilog.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexVHDL.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexVisualProlog.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexYAML.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_absolute.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_expand.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_ext.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_isdir.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_list.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_match.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\filename_setext.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_abort.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_add_idle.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Adjuster.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_arc.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_arci.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_arg.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_ask.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Bitmap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_BMP_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_boxtype.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Browser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Browser_.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Browser_load.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Button.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_call_main.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Chart.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Check_Browser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Clock.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_color.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Color_Chooser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_compose.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Copy_Surface.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Counter.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_cursor.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_curve.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Device.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_diamond_box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_display.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_dnd.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Double_Window.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_draw.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_draw_image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_draw_pixmap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_encoding_latin1.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_encoding_mac_roman.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_engraved_label.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Browser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Chooser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Chooser2.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_file_dir.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Icon.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Icon2.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_File_Input.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_font.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_get_key.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_get_system_colors.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_gleam.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_grab.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Group.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_gtk.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Help_Dialog.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Help_Dialog_Dox.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Help_View.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Image_Surface.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_images_core.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Input.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Input_.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_labeltype.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Light_Button.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_line_style.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_lock.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_add.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_Bar.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_Button.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_global.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Menu_Window.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Multi_Label.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Native_File_Chooser.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Native_File_Chooser_common.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_open_uri.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_oval_box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_overlay.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_overlay_visual.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Overlay_Window.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_own_colormap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Pack.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Paged_Device.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Pixmap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_plastic.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_PNM_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Positioner.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_PostScript.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Preferences.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Printer.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Progress.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_read_image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_rect.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_round_box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Round_Button.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_rounded_box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Scroll.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_scroll_area.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Scrollbar.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_set_font.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_set_fonts.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_shadow_box.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Shared_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_shortcut.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_show_colormap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Slider.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_symbols.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Table.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Table_Row.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tabs.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Text_Buffer.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Text_Display.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Text_Editor.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tile.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tiled_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tooltip.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tree.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tree_Item.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tree_Item_Array.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Tree_Prefs.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_utf.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_utf8.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Valuator.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Value_Input.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Value_Output.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Value_Slider.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\fl_vertex.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_visual.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Widget.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Window.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Window_fullscreen.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Window_hotspot.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Window_iconize.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Window_shape.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_Wizard.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_XBM_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\Fl_XPM_Image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\flstring.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_bitmap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_compatability.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_free.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_fselect.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_pixmap.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\forms_timer.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\jpgd.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\keysym2Ucs.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\libnsgif.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\lodepng.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\numericsort.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\ps_image.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\scandir.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\screen_xywh.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\ucs2fontmap.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8_case.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8_is_right2left.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8_is_spacing.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8_mk_wcwidth.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8Input.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8Utils.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\utf8Wrap.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\vsnprintf.c">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="FL\src\wince_compate.cxx">
+      <Filter>FL</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\Accessor.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\CharacterCategory.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\CharacterSet.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerBase.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerModule.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerNoExceptions.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerSimple.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\PropSetSimple.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\StyleContext.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\WordList.cxx">
+      <Filter>lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\Fl_Scintilla.cxx">
+      <Filter>fltk</Filter>
+    </ClCompile>
+    <ClCompile Include="fltk\PlatFLTK.cxx">
+      <Filter>fltk</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AutoComplete.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CallTip.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaseConvert.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaseFolder.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Catalogue.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CellBuffer.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharClassify.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ContractionState.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Decoration.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Document.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EditModel.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Editor.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EditView.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExternalLexer.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Indicator.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyMap.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineMarker.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MarginView.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PerLine.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PositionCache.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RESearch.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RunStyles.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScintillaBase.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Selection.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Style.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UniConversion.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ViewStyle.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XPM.cxx">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="iconv\iconv.c">
+      <Filter>iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="iconv\localcharset.c">
+      <Filter>iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="iconv\relocatable.c">
+      <Filter>iconv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ILexer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sci_Position.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SciLexer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scintilla.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\cgdebug.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\dingbats_.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\fastarrow.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\fl_cmap.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\Fl_Font.H">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\Fl_XColor.H">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\flstring.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\mediumarrow.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\slowarrow.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\symbol_.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\utf8_case.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\utf8_spacing.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="FL\src\Xutf8.h">
+      <Filter>FL</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\Accessor.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\CharacterCategory.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\CharacterSet.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexAccessor.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerBase.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerModule.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerNoExceptions.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerSimple.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\OptionSet.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\PropSetSimple.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\SparseState.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\StringCopy.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\StyleContext.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\SubStyles.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\WordList.h">
+      <Filter>lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\Fl_Scintilla.h">
+      <Filter>fltk</Filter>
+    </ClInclude>
+    <ClInclude Include="fltk\PlatFLTK.h">
+      <Filter>fltk</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AutoComplete.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CallTip.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CaseConvert.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CaseFolder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Catalogue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CellBuffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharClassify.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ContractionState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Decoration.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Document.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditModel.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Editor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditView.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ExternalLexer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FontQuality.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Indicator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyMap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LineMarker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MarginView.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Partitioning.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PerLine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Position.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PositionCache.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RESearch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RunStyles.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScintillaBase.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Selection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SplitVector.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Style.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UnicodeFromUTF8.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UniConversion.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ViewStyle.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XPM.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_aix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_aix_sysaix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_dos.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_extra.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_osf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_osf1_sysosf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_sysaix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_syshpux.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_sysosf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\aliases_syssolaris.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\armscii_8.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ascii.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\atarist.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5_2003.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5hkscs1999.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5hkscs2001.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5hkscs2004.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\big5hkscs2008.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\c99.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_aix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_aix_sysaix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_dos.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_extra.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_local.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_local_sysaix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_local_syshpux.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_local_sysosf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_local_syssolaris.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_osf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_osf1_sysosf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_sysaix.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_syshpux.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_sysosf1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\canonical_syssolaris.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ces_big5.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ces_gbk.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cjk_variants.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_15.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_3.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_4.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_4a.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_4b.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_5.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_6.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_7.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cns11643_inv.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\config-iconv.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\converters.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1046.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1124.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1125.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1129.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1131.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1133.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1161.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1162.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1163.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1250.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1251.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1252.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1253.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1254.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1255.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1256.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1257.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp1258.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp437.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp737.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp775.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp850.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp852.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp853.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp855.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp856.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp857.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp858.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp860.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp861.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp862.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp863.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp864.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp865.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp866.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp869.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp874.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp922.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp932.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp932ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp936.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp936ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp943.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp949.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp950.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\cp950ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\dec_hanyu.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\dec_kanji.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\euc_cn.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\euc_jisx0213.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\euc_jp.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\euc_kr.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\euc_tw.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\flags.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\flushwc.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb12345.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb12345ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb18030.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb18030ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb18030uni.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gb2312.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gbk.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gbkext1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gbkext2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\gbkext_inv.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\georgian_academy.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\georgian_ps.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hkscs1999.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hkscs2001.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hkscs2004.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hkscs2008.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hp_roman8.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\hz.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iconv.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iconv_open1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iconv_open2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_cn.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_cnext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_jp.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_jp1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_jp2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_jp3.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso2022_kr.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso646_cn.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso646_jp.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_10.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_11.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_13.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_14.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_15.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_16.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_3.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_4.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_5.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_6.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_7.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_8.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\iso8859_9.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\isoir165.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\isoir165ext.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\java.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\jisx0201.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\jisx0208.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\jisx0212.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\jisx0213.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\johab.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\johab_hangul.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\koi8_r.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\koi8_ru.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\koi8_t.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\koi8_u.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ksc5601.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\localcharset.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\loop_unicode.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\loop_wchar.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\loops.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_arabic.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_centraleurope.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_croatian.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_cyrillic.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_greek.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_hebrew.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_iceland.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_roman.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_romania.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_thai.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_turkish.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mac_ukraine.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\mulelao.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\nextstep.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\pt154.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\relocatable.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\riscos1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\rk1048.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\shift_jisx0213.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\sjis.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\tcvn.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\tds565.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\tis620.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\translit.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs2be.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs2internal.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs2le.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs2swapped.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs4.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs4be.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs4internal.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs4le.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\ucs4swapped.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\uhc_1.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\uhc_2.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf16.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf16be.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf16le.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf32.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf32be.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf32le.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf7.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\utf8.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\vietcomb.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="iconv\viscii.h">
+      <Filter>iconv</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4214605D-F8E0-437B-9E2C-08A983127B2B}</ProjectGuid>
+    <RootNamespace>editor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;./FL;./include;./lexlib;./src;./fltk;./iconv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;SCI_LEXER;SCI_NAMESPACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./;./FL;./include;./lexlib;./src;./fltk;./iconv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;SCI_LEXER;SCI_NAMESPACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="fltk\Fl_Scintilla.cxx" />
+    <ClCompile Include="fltk\PlatFLTK.cxx" />
+    <ClCompile Include="FL\src\filename_absolute.cxx" />
+    <ClCompile Include="FL\src\filename_expand.cxx" />
+    <ClCompile Include="FL\src\filename_ext.cxx" />
+    <ClCompile Include="FL\src\filename_isdir.cxx" />
+    <ClCompile Include="FL\src\filename_list.cxx" />
+    <ClCompile Include="FL\src\filename_match.cxx" />
+    <ClCompile Include="FL\src\filename_setext.cxx" />
+    <ClCompile Include="FL\src\Fl.cxx" />
+    <ClCompile Include="FL\src\flstring.c" />
+    <ClCompile Include="FL\src\Fl_abort.cxx" />
+    <ClCompile Include="FL\src\Fl_add_idle.cxx" />
+    <ClCompile Include="FL\src\Fl_Adjuster.cxx" />
+    <ClCompile Include="FL\src\fl_arc.cxx" />
+    <ClCompile Include="FL\src\fl_arci.cxx" />
+    <ClCompile Include="FL\src\Fl_arg.cxx" />
+    <ClCompile Include="FL\src\fl_ask.cxx" />
+    <ClCompile Include="FL\src\Fl_Bitmap.cxx" />
+    <ClCompile Include="FL\src\Fl_BMP_Image.cxx" />
+    <ClCompile Include="FL\src\Fl_Box.cxx" />
+    <ClCompile Include="FL\src\fl_boxtype.cxx" />
+    <ClCompile Include="FL\src\Fl_Browser.cxx" />
+    <ClCompile Include="FL\src\Fl_Browser_.cxx" />
+    <ClCompile Include="FL\src\Fl_Browser_load.cxx" />
+    <ClCompile Include="FL\src\Fl_Button.cxx" />
+    <ClCompile Include="FL\src\fl_call_main.c" />
+    <ClCompile Include="FL\src\Fl_Chart.cxx" />
+    <ClCompile Include="FL\src\Fl_Check_Browser.cxx" />
+    <ClCompile Include="FL\src\Fl_Clock.cxx" />
+    <ClCompile Include="FL\src\fl_color.cxx" />
+    <ClCompile Include="FL\src\Fl_Color_Chooser.cxx" />
+    <ClCompile Include="FL\src\Fl_compose.cxx" />
+    <ClCompile Include="FL\src\Fl_Copy_Surface.cxx" />
+    <ClCompile Include="FL\src\Fl_Counter.cxx" />
+    <ClCompile Include="FL\src\fl_cursor.cxx" />
+    <ClCompile Include="FL\src\fl_curve.cxx" />
+    <ClCompile Include="FL\src\Fl_Device.cxx" />
+    <ClCompile Include="FL\src\fl_diamond_box.cxx" />
+    <ClCompile Include="FL\src\Fl_display.cxx" />
+    <ClCompile Include="FL\src\fl_dnd.cxx" />
+    <ClCompile Include="FL\src\Fl_Double_Window.cxx" />
+    <ClCompile Include="FL\src\fl_draw.cxx" />
+    <ClCompile Include="FL\src\fl_draw_image.cxx" />
+    <ClCompile Include="FL\src\fl_draw_pixmap.cxx" />
+    <ClCompile Include="FL\src\fl_encoding_latin1.cxx" />
+    <ClCompile Include="FL\src\fl_encoding_mac_roman.cxx" />
+    <ClCompile Include="FL\src\fl_engraved_label.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Browser.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Chooser.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Chooser2.cxx" />
+    <ClCompile Include="FL\src\fl_file_dir.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Icon.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Icon2.cxx" />
+    <ClCompile Include="FL\src\Fl_File_Input.cxx" />
+    <ClCompile Include="FL\src\fl_font.cxx" />
+    <ClCompile Include="FL\src\Fl_get_key.cxx" />
+    <ClCompile Include="FL\src\Fl_get_system_colors.cxx" />
+    <ClCompile Include="FL\src\fl_gleam.cxx" />
+    <ClCompile Include="FL\src\Fl_grab.cxx" />
+    <ClCompile Include="FL\src\Fl_Group.cxx" />
+    <ClCompile Include="FL\src\fl_gtk.cxx" />
+    <ClCompile Include="FL\src\Fl_Help_Dialog.cxx" />
+    <ClCompile Include="FL\src\Fl_Help_Dialog_Dox.cxx" />
+    <ClCompile Include="FL\src\Fl_Help_View.cxx" />
+    <ClCompile Include="FL\src\Fl_Image.cxx" />
+    <ClCompile Include="FL\src\fl_images_core.cxx" />
+    <ClCompile Include="FL\src\Fl_Image_Surface.cxx" />
+    <ClCompile Include="FL\src\Fl_Input.cxx" />
+    <ClCompile Include="FL\src\Fl_Input_.cxx" />
+    <ClCompile Include="FL\src\fl_labeltype.cxx" />
+    <ClCompile Include="FL\src\Fl_Light_Button.cxx" />
+    <ClCompile Include="FL\src\fl_line_style.cxx" />
+    <ClCompile Include="FL\src\Fl_lock.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_add.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_Bar.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_Button.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_global.cxx" />
+    <ClCompile Include="FL\src\Fl_Menu_Window.cxx" />
+    <ClCompile Include="FL\src\Fl_Multi_Label.cxx" />
+    <ClCompile Include="FL\src\Fl_Native_File_Chooser.cxx" />
+    <ClCompile Include="FL\src\Fl_Native_File_Chooser_common.cxx" />
+    <ClCompile Include="FL\src\fl_open_uri.cxx" />
+    <ClCompile Include="FL\src\fl_oval_box.cxx" />
+    <ClCompile Include="FL\src\fl_overlay.cxx" />
+    <ClCompile Include="FL\src\fl_overlay_visual.cxx" />
+    <ClCompile Include="FL\src\Fl_Overlay_Window.cxx" />
+    <ClCompile Include="FL\src\Fl_own_colormap.cxx" />
+    <ClCompile Include="FL\src\Fl_Pack.cxx" />
+    <ClCompile Include="FL\src\Fl_Paged_Device.cxx" />
+    <ClCompile Include="FL\src\Fl_Pixmap.cxx" />
+    <ClCompile Include="FL\src\fl_plastic.cxx" />
+    <ClCompile Include="FL\src\Fl_PNM_Image.cxx" />
+    <ClCompile Include="FL\src\Fl_Positioner.cxx" />
+    <ClCompile Include="FL\src\Fl_PostScript.cxx" />
+    <ClCompile Include="FL\src\Fl_Preferences.cxx" />
+    <ClCompile Include="FL\src\Fl_Printer.cxx" />
+    <ClCompile Include="FL\src\Fl_Progress.cxx" />
+    <ClCompile Include="FL\src\fl_read_image.cxx" />
+    <ClCompile Include="FL\src\fl_rect.cxx" />
+    <ClCompile Include="FL\src\fl_rounded_box.cxx" />
+    <ClCompile Include="FL\src\fl_round_box.cxx" />
+    <ClCompile Include="FL\src\Fl_Round_Button.cxx" />
+    <ClCompile Include="FL\src\Fl_Scroll.cxx" />
+    <ClCompile Include="FL\src\Fl_Scrollbar.cxx" />
+    <ClCompile Include="FL\src\fl_scroll_area.cxx" />
+    <ClCompile Include="FL\src\fl_set_font.cxx" />
+    <ClCompile Include="FL\src\fl_set_fonts.cxx" />
+    <ClCompile Include="FL\src\fl_shadow_box.cxx" />
+    <ClCompile Include="FL\src\Fl_Shared_Image.cxx" />
+    <ClCompile Include="FL\src\fl_shortcut.cxx" />
+    <ClCompile Include="FL\src\fl_show_colormap.cxx" />
+    <ClCompile Include="FL\src\Fl_Slider.cxx" />
+    <ClCompile Include="FL\src\fl_symbols.cxx" />
+    <ClCompile Include="FL\src\Fl_Table.cxx" />
+    <ClCompile Include="FL\src\Fl_Table_Row.cxx" />
+    <ClCompile Include="FL\src\Fl_Tabs.cxx" />
+    <ClCompile Include="FL\src\Fl_Text_Buffer.cxx" />
+    <ClCompile Include="FL\src\Fl_Text_Display.cxx" />
+    <ClCompile Include="FL\src\Fl_Text_Editor.cxx" />
+    <ClCompile Include="FL\src\Fl_Tile.cxx" />
+    <ClCompile Include="FL\src\Fl_Tiled_Image.cxx" />
+    <ClCompile Include="FL\src\Fl_Tooltip.cxx" />
+    <ClCompile Include="FL\src\Fl_Tree.cxx" />
+    <ClCompile Include="FL\src\Fl_Tree_Item.cxx" />
+    <ClCompile Include="FL\src\Fl_Tree_Item_Array.cxx" />
+    <ClCompile Include="FL\src\Fl_Tree_Prefs.cxx" />
+    <ClCompile Include="FL\src\fl_utf.c" />
+    <ClCompile Include="FL\src\fl_utf8.cxx" />
+    <ClCompile Include="FL\src\Fl_Valuator.cxx" />
+    <ClCompile Include="FL\src\Fl_Value_Input.cxx" />
+    <ClCompile Include="FL\src\Fl_Value_Output.cxx" />
+    <ClCompile Include="FL\src\Fl_Value_Slider.cxx" />
+    <ClCompile Include="FL\src\fl_vertex.cxx" />
+    <ClCompile Include="FL\src\Fl_visual.cxx" />
+    <ClCompile Include="FL\src\Fl_Widget.cxx" />
+    <ClCompile Include="FL\src\Fl_Window.cxx" />
+    <ClCompile Include="FL\src\Fl_Window_fullscreen.cxx" />
+    <ClCompile Include="FL\src\Fl_Window_hotspot.cxx" />
+    <ClCompile Include="FL\src\Fl_Window_iconize.cxx" />
+    <ClCompile Include="FL\src\Fl_Window_shape.cxx" />
+    <ClCompile Include="FL\src\Fl_Wizard.cxx" />
+    <ClCompile Include="FL\src\Fl_XBM_Image.cxx" />
+    <ClCompile Include="FL\src\Fl_XPM_Image.cxx" />
+    <ClCompile Include="FL\src\forms_bitmap.cxx" />
+    <ClCompile Include="FL\src\forms_compatability.cxx" />
+    <ClCompile Include="FL\src\forms_free.cxx" />
+    <ClCompile Include="FL\src\forms_fselect.cxx" />
+    <ClCompile Include="FL\src\forms_pixmap.cxx" />
+    <ClCompile Include="FL\src\forms_timer.cxx" />
+    <ClCompile Include="FL\src\jpgd.cxx" />
+    <ClCompile Include="FL\src\keysym2Ucs.c" />
+    <ClCompile Include="FL\src\libnsgif.cxx" />
+    <ClCompile Include="FL\src\lodepng.cxx" />
+    <ClCompile Include="FL\src\numericsort.cxx" />
+    <ClCompile Include="FL\src\ps_image.cxx" />
+    <ClCompile Include="FL\src\scandir.c" />
+    <ClCompile Include="FL\src\screen_xywh.cxx" />
+    <ClCompile Include="FL\src\ucs2fontmap.c" />
+    <ClCompile Include="FL\src\utf8Input.c" />
+    <ClCompile Include="FL\src\utf8Utils.c" />
+    <ClCompile Include="FL\src\utf8Wrap.c" />
+    <ClCompile Include="FL\src\utf8_case.c" />
+    <ClCompile Include="FL\src\utf8_is_right2left.c" />
+    <ClCompile Include="FL\src\utf8_is_spacing.c" />
+    <ClCompile Include="FL\src\utf8_mk_wcwidth.c" />
+    <ClCompile Include="FL\src\vsnprintf.c" />
+    <ClCompile Include="FL\src\wince_compate.cxx" />
+    <ClCompile Include="iconv\iconv.c" />
+    <ClCompile Include="iconv\localcharset.c" />
+    <ClCompile Include="iconv\relocatable.c" />
+    <ClCompile Include="lexers\LexA68k.cxx" />
+    <ClCompile Include="lexers\LexAbaqus.cxx" />
+    <ClCompile Include="lexers\LexAda.cxx" />
+    <ClCompile Include="lexers\LexAPDL.cxx" />
+    <ClCompile Include="lexers\LexAsm.cxx" />
+    <ClCompile Include="lexers\LexAsn1.cxx" />
+    <ClCompile Include="lexers\LexASY.cxx" />
+    <ClCompile Include="lexers\LexAU3.cxx" />
+    <ClCompile Include="lexers\LexAVE.cxx" />
+    <ClCompile Include="lexers\LexAVS.cxx" />
+    <ClCompile Include="lexers\LexBaan.cxx" />
+    <ClCompile Include="lexers\LexBash.cxx" />
+    <ClCompile Include="lexers\LexBasic.cxx" />
+    <ClCompile Include="lexers\LexBatch.cxx" />
+    <ClCompile Include="lexers\LexBibTeX.cxx" />
+    <ClCompile Include="lexers\LexBullant.cxx" />
+    <ClCompile Include="lexers\LexCaml.cxx" />
+    <ClCompile Include="lexers\LexCLW.cxx" />
+    <ClCompile Include="lexers\LexCmake.cxx" />
+    <ClCompile Include="lexers\LexCOBOL.cxx" />
+    <ClCompile Include="lexers\LexCoffeeScript.cxx" />
+    <ClCompile Include="lexers\LexConf.cxx" />
+    <ClCompile Include="lexers\LexCPP.cxx" />
+    <ClCompile Include="lexers\LexCrontab.cxx" />
+    <ClCompile Include="lexers\LexCsound.cxx" />
+    <ClCompile Include="lexers\LexCSS.cxx" />
+    <ClCompile Include="lexers\LexD.cxx" />
+    <ClCompile Include="lexers\LexDiff.cxx" />
+    <ClCompile Include="lexers\LexDMAP.cxx" />
+    <ClCompile Include="lexers\LexDMIS.cxx" />
+    <ClCompile Include="lexers\LexECL.cxx" />
+    <ClCompile Include="lexers\LexEiffel.cxx" />
+    <ClCompile Include="lexers\LexErlang.cxx" />
+    <ClCompile Include="lexers\LexErrorList.cxx" />
+    <ClCompile Include="lexers\LexEScript.cxx" />
+    <ClCompile Include="lexers\LexFlagship.cxx" />
+    <ClCompile Include="lexers\LexForth.cxx" />
+    <ClCompile Include="lexers\LexFortran.cxx" />
+    <ClCompile Include="lexers\LexGAP.cxx" />
+    <ClCompile Include="lexers\LexGui4Cli.cxx" />
+    <ClCompile Include="lexers\LexHaskell.cxx" />
+    <ClCompile Include="lexers\LexHex.cxx" />
+    <ClCompile Include="lexers\LexHTML.cxx" />
+    <ClCompile Include="lexers\LexInno.cxx" />
+    <ClCompile Include="lexers\LexKix.cxx" />
+    <ClCompile Include="lexers\LexKVIrc.cxx" />
+    <ClCompile Include="lexers\LexLaTeX.cxx" />
+    <ClCompile Include="lexers\LexLisp.cxx" />
+    <ClCompile Include="lexers\LexLout.cxx" />
+    <ClCompile Include="lexers\LexLua.cxx" />
+    <ClCompile Include="lexers\LexMagik.cxx" />
+    <ClCompile Include="lexers\LexMake.cxx" />
+    <ClCompile Include="lexers\LexMarkdown.cxx" />
+    <ClCompile Include="lexers\LexMatlab.cxx" />
+    <ClCompile Include="lexers\LexMetapost.cxx" />
+    <ClCompile Include="lexers\LexMMIXAL.cxx" />
+    <ClCompile Include="lexers\LexModula.cxx" />
+    <ClCompile Include="lexers\LexMPT.cxx" />
+    <ClCompile Include="lexers\LexMSSQL.cxx" />
+    <ClCompile Include="lexers\LexMySQL.cxx" />
+    <ClCompile Include="lexers\LexNimrod.cxx" />
+    <ClCompile Include="lexers\LexNsis.cxx" />
+    <ClCompile Include="lexers\LexNull.cxx" />
+    <ClCompile Include="lexers\LexOpal.cxx" />
+    <ClCompile Include="lexers\LexOScript.cxx" />
+    <ClCompile Include="lexers\LexPascal.cxx" />
+    <ClCompile Include="lexers\LexPB.cxx" />
+    <ClCompile Include="lexers\LexPerl.cxx" />
+    <ClCompile Include="lexers\LexPLM.cxx" />
+    <ClCompile Include="lexers\LexPO.cxx" />
+    <ClCompile Include="lexers\LexPOV.cxx" />
+    <ClCompile Include="lexers\LexPowerPro.cxx" />
+    <ClCompile Include="lexers\LexPowerShell.cxx" />
+    <ClCompile Include="lexers\LexProgress.cxx" />
+    <ClCompile Include="lexers\LexProps.cxx" />
+    <ClCompile Include="lexers\LexPS.cxx" />
+    <ClCompile Include="lexers\LexPython.cxx" />
+    <ClCompile Include="lexers\LexR.cxx" />
+    <ClCompile Include="lexers\LexRebol.cxx" />
+    <ClCompile Include="lexers\LexRegistry.cxx" />
+    <ClCompile Include="lexers\LexRuby.cxx" />
+    <ClCompile Include="lexers\LexRust.cxx" />
+    <ClCompile Include="lexers\LexScriptol.cxx" />
+    <ClCompile Include="lexers\LexSmalltalk.cxx" />
+    <ClCompile Include="lexers\LexSML.cxx" />
+    <ClCompile Include="lexers\LexSorcus.cxx" />
+    <ClCompile Include="lexers\LexSpecman.cxx" />
+    <ClCompile Include="lexers\LexSpice.cxx" />
+    <ClCompile Include="lexers\LexSQL.cxx" />
+    <ClCompile Include="lexers\LexSTTXT.cxx" />
+    <ClCompile Include="lexers\LexTACL.cxx" />
+    <ClCompile Include="lexers\LexTADS3.cxx" />
+    <ClCompile Include="lexers\LexTAL.cxx" />
+    <ClCompile Include="lexers\LexTCL.cxx" />
+    <ClCompile Include="lexers\LexTCMD.cxx" />
+    <ClCompile Include="lexers\LexTeX.cxx" />
+    <ClCompile Include="lexers\LexTxt2tags.cxx" />
+    <ClCompile Include="lexers\LexVB.cxx" />
+    <ClCompile Include="lexers\LexVerilog.cxx" />
+    <ClCompile Include="lexers\LexVHDL.cxx" />
+    <ClCompile Include="lexers\LexVisualProlog.cxx" />
+    <ClCompile Include="lexers\LexYAML.cxx" />
+    <ClCompile Include="lexlib\Accessor.cxx" />
+    <ClCompile Include="lexlib\CharacterCategory.cxx" />
+    <ClCompile Include="lexlib\CharacterSet.cxx" />
+    <ClCompile Include="lexlib\LexerBase.cxx" />
+    <ClCompile Include="lexlib\LexerModule.cxx" />
+    <ClCompile Include="lexlib\LexerNoExceptions.cxx" />
+    <ClCompile Include="lexlib\LexerSimple.cxx" />
+    <ClCompile Include="lexlib\PropSetSimple.cxx" />
+    <ClCompile Include="lexlib\StyleContext.cxx" />
+    <ClCompile Include="lexlib\WordList.cxx" />
+    <ClCompile Include="src\AutoComplete.cxx" />
+    <ClCompile Include="src\CallTip.cxx" />
+    <ClCompile Include="src\CaseConvert.cxx" />
+    <ClCompile Include="src\CaseFolder.cxx" />
+    <ClCompile Include="src\Catalogue.cxx" />
+    <ClCompile Include="src\CellBuffer.cxx" />
+    <ClCompile Include="src\CharClassify.cxx" />
+    <ClCompile Include="src\ContractionState.cxx" />
+    <ClCompile Include="src\Decoration.cxx" />
+    <ClCompile Include="src\Document.cxx" />
+    <ClCompile Include="src\EditModel.cxx" />
+    <ClCompile Include="src\Editor.cxx" />
+    <ClCompile Include="src\EditView.cxx" />
+    <ClCompile Include="src\ExternalLexer.cxx" />
+    <ClCompile Include="src\Indicator.cxx" />
+    <ClCompile Include="src\KeyMap.cxx" />
+    <ClCompile Include="src\LineMarker.cxx" />
+    <ClCompile Include="src\MarginView.cxx" />
+    <ClCompile Include="src\PerLine.cxx" />
+    <ClCompile Include="src\PositionCache.cxx" />
+    <ClCompile Include="src\RESearch.cxx" />
+    <ClCompile Include="src\RunStyles.cxx" />
+    <ClCompile Include="src\ScintillaBase.cxx" />
+    <ClCompile Include="src\Selection.cxx" />
+    <ClCompile Include="src\Style.cxx" />
+    <ClCompile Include="src\UniConversion.cxx" />
+    <ClCompile Include="src\ViewStyle.cxx" />
+    <ClCompile Include="src\XPM.cxx" />
+    <ClCompile Include="test_editor.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fltk\Fl_Scintilla.h" />
+    <ClInclude Include="fltk\PlatFLTK.h" />
+    <ClInclude Include="FL\src\cgdebug.h" />
+    <ClInclude Include="FL\src\dingbats_.h" />
+    <ClInclude Include="FL\src\fastarrow.h" />
+    <ClInclude Include="FL\src\flstring.h" />
+    <ClInclude Include="FL\src\fl_cmap.h" />
+    <ClInclude Include="FL\src\Fl_Font.H" />
+    <ClInclude Include="FL\src\Fl_XColor.H" />
+    <ClInclude Include="FL\src\mediumarrow.h" />
+    <ClInclude Include="FL\src\slowarrow.h" />
+    <ClInclude Include="FL\src\symbol_.h" />
+    <ClInclude Include="FL\src\utf8_case.h" />
+    <ClInclude Include="FL\src\utf8_spacing.h" />
+    <ClInclude Include="FL\src\Xutf8.h" />
+    <ClInclude Include="iconv\aliases.h" />
+    <ClInclude Include="iconv\aliases2.h" />
+    <ClInclude Include="iconv\aliases_aix.h" />
+    <ClInclude Include="iconv\aliases_aix_sysaix.h" />
+    <ClInclude Include="iconv\aliases_dos.h" />
+    <ClInclude Include="iconv\aliases_extra.h" />
+    <ClInclude Include="iconv\aliases_osf1.h" />
+    <ClInclude Include="iconv\aliases_osf1_sysosf1.h" />
+    <ClInclude Include="iconv\aliases_sysaix.h" />
+    <ClInclude Include="iconv\aliases_syshpux.h" />
+    <ClInclude Include="iconv\aliases_sysosf1.h" />
+    <ClInclude Include="iconv\aliases_syssolaris.h" />
+    <ClInclude Include="iconv\armscii_8.h" />
+    <ClInclude Include="iconv\ascii.h" />
+    <ClInclude Include="iconv\atarist.h" />
+    <ClInclude Include="iconv\big5.h" />
+    <ClInclude Include="iconv\big5hkscs1999.h" />
+    <ClInclude Include="iconv\big5hkscs2001.h" />
+    <ClInclude Include="iconv\big5hkscs2004.h" />
+    <ClInclude Include="iconv\big5hkscs2008.h" />
+    <ClInclude Include="iconv\big5_2003.h" />
+    <ClInclude Include="iconv\c99.h" />
+    <ClInclude Include="iconv\canonical.h" />
+    <ClInclude Include="iconv\canonical_aix.h" />
+    <ClInclude Include="iconv\canonical_aix_sysaix.h" />
+    <ClInclude Include="iconv\canonical_dos.h" />
+    <ClInclude Include="iconv\canonical_extra.h" />
+    <ClInclude Include="iconv\canonical_local.h" />
+    <ClInclude Include="iconv\canonical_local_sysaix.h" />
+    <ClInclude Include="iconv\canonical_local_syshpux.h" />
+    <ClInclude Include="iconv\canonical_local_sysosf1.h" />
+    <ClInclude Include="iconv\canonical_local_syssolaris.h" />
+    <ClInclude Include="iconv\canonical_osf1.h" />
+    <ClInclude Include="iconv\canonical_osf1_sysosf1.h" />
+    <ClInclude Include="iconv\canonical_sysaix.h" />
+    <ClInclude Include="iconv\canonical_syshpux.h" />
+    <ClInclude Include="iconv\canonical_sysosf1.h" />
+    <ClInclude Include="iconv\canonical_syssolaris.h" />
+    <ClInclude Include="iconv\ces_big5.h" />
+    <ClInclude Include="iconv\ces_gbk.h" />
+    <ClInclude Include="iconv\cjk_variants.h" />
+    <ClInclude Include="iconv\cns11643.h" />
+    <ClInclude Include="iconv\cns11643_1.h" />
+    <ClInclude Include="iconv\cns11643_15.h" />
+    <ClInclude Include="iconv\cns11643_2.h" />
+    <ClInclude Include="iconv\cns11643_3.h" />
+    <ClInclude Include="iconv\cns11643_4.h" />
+    <ClInclude Include="iconv\cns11643_4a.h" />
+    <ClInclude Include="iconv\cns11643_4b.h" />
+    <ClInclude Include="iconv\cns11643_5.h" />
+    <ClInclude Include="iconv\cns11643_6.h" />
+    <ClInclude Include="iconv\cns11643_7.h" />
+    <ClInclude Include="iconv\cns11643_inv.h" />
+    <ClInclude Include="iconv\config-iconv.h" />
+    <ClInclude Include="iconv\converters.h" />
+    <ClInclude Include="iconv\cp1046.h" />
+    <ClInclude Include="iconv\cp1124.h" />
+    <ClInclude Include="iconv\cp1125.h" />
+    <ClInclude Include="iconv\cp1129.h" />
+    <ClInclude Include="iconv\cp1131.h" />
+    <ClInclude Include="iconv\cp1133.h" />
+    <ClInclude Include="iconv\cp1161.h" />
+    <ClInclude Include="iconv\cp1162.h" />
+    <ClInclude Include="iconv\cp1163.h" />
+    <ClInclude Include="iconv\cp1250.h" />
+    <ClInclude Include="iconv\cp1251.h" />
+    <ClInclude Include="iconv\cp1252.h" />
+    <ClInclude Include="iconv\cp1253.h" />
+    <ClInclude Include="iconv\cp1254.h" />
+    <ClInclude Include="iconv\cp1255.h" />
+    <ClInclude Include="iconv\cp1256.h" />
+    <ClInclude Include="iconv\cp1257.h" />
+    <ClInclude Include="iconv\cp1258.h" />
+    <ClInclude Include="iconv\cp437.h" />
+    <ClInclude Include="iconv\cp737.h" />
+    <ClInclude Include="iconv\cp775.h" />
+    <ClInclude Include="iconv\cp850.h" />
+    <ClInclude Include="iconv\cp852.h" />
+    <ClInclude Include="iconv\cp853.h" />
+    <ClInclude Include="iconv\cp855.h" />
+    <ClInclude Include="iconv\cp856.h" />
+    <ClInclude Include="iconv\cp857.h" />
+    <ClInclude Include="iconv\cp858.h" />
+    <ClInclude Include="iconv\cp860.h" />
+    <ClInclude Include="iconv\cp861.h" />
+    <ClInclude Include="iconv\cp862.h" />
+    <ClInclude Include="iconv\cp863.h" />
+    <ClInclude Include="iconv\cp864.h" />
+    <ClInclude Include="iconv\cp865.h" />
+    <ClInclude Include="iconv\cp866.h" />
+    <ClInclude Include="iconv\cp869.h" />
+    <ClInclude Include="iconv\cp874.h" />
+    <ClInclude Include="iconv\cp922.h" />
+    <ClInclude Include="iconv\cp932.h" />
+    <ClInclude Include="iconv\cp932ext.h" />
+    <ClInclude Include="iconv\cp936.h" />
+    <ClInclude Include="iconv\cp936ext.h" />
+    <ClInclude Include="iconv\cp943.h" />
+    <ClInclude Include="iconv\cp949.h" />
+    <ClInclude Include="iconv\cp950.h" />
+    <ClInclude Include="iconv\cp950ext.h" />
+    <ClInclude Include="iconv\dec_hanyu.h" />
+    <ClInclude Include="iconv\dec_kanji.h" />
+    <ClInclude Include="iconv\euc_cn.h" />
+    <ClInclude Include="iconv\euc_jisx0213.h" />
+    <ClInclude Include="iconv\euc_jp.h" />
+    <ClInclude Include="iconv\euc_kr.h" />
+    <ClInclude Include="iconv\euc_tw.h" />
+    <ClInclude Include="iconv\flags.h" />
+    <ClInclude Include="iconv\flushwc.h" />
+    <ClInclude Include="iconv\gb12345.h" />
+    <ClInclude Include="iconv\gb12345ext.h" />
+    <ClInclude Include="iconv\gb18030.h" />
+    <ClInclude Include="iconv\gb18030ext.h" />
+    <ClInclude Include="iconv\gb18030uni.h" />
+    <ClInclude Include="iconv\gb2312.h" />
+    <ClInclude Include="iconv\gbk.h" />
+    <ClInclude Include="iconv\gbkext1.h" />
+    <ClInclude Include="iconv\gbkext2.h" />
+    <ClInclude Include="iconv\gbkext_inv.h" />
+    <ClInclude Include="iconv\georgian_academy.h" />
+    <ClInclude Include="iconv\georgian_ps.h" />
+    <ClInclude Include="iconv\hkscs1999.h" />
+    <ClInclude Include="iconv\hkscs2001.h" />
+    <ClInclude Include="iconv\hkscs2004.h" />
+    <ClInclude Include="iconv\hkscs2008.h" />
+    <ClInclude Include="iconv\hp_roman8.h" />
+    <ClInclude Include="iconv\hz.h" />
+    <ClInclude Include="iconv\iconv.h" />
+    <ClInclude Include="iconv\iconv_open1.h" />
+    <ClInclude Include="iconv\iconv_open2.h" />
+    <ClInclude Include="iconv\iso2022_cn.h" />
+    <ClInclude Include="iconv\iso2022_cnext.h" />
+    <ClInclude Include="iconv\iso2022_jp.h" />
+    <ClInclude Include="iconv\iso2022_jp1.h" />
+    <ClInclude Include="iconv\iso2022_jp2.h" />
+    <ClInclude Include="iconv\iso2022_jp3.h" />
+    <ClInclude Include="iconv\iso2022_kr.h" />
+    <ClInclude Include="iconv\iso646_cn.h" />
+    <ClInclude Include="iconv\iso646_jp.h" />
+    <ClInclude Include="iconv\iso8859_1.h" />
+    <ClInclude Include="iconv\iso8859_10.h" />
+    <ClInclude Include="iconv\iso8859_11.h" />
+    <ClInclude Include="iconv\iso8859_13.h" />
+    <ClInclude Include="iconv\iso8859_14.h" />
+    <ClInclude Include="iconv\iso8859_15.h" />
+    <ClInclude Include="iconv\iso8859_16.h" />
+    <ClInclude Include="iconv\iso8859_2.h" />
+    <ClInclude Include="iconv\iso8859_3.h" />
+    <ClInclude Include="iconv\iso8859_4.h" />
+    <ClInclude Include="iconv\iso8859_5.h" />
+    <ClInclude Include="iconv\iso8859_6.h" />
+    <ClInclude Include="iconv\iso8859_7.h" />
+    <ClInclude Include="iconv\iso8859_8.h" />
+    <ClInclude Include="iconv\iso8859_9.h" />
+    <ClInclude Include="iconv\isoir165.h" />
+    <ClInclude Include="iconv\isoir165ext.h" />
+    <ClInclude Include="iconv\java.h" />
+    <ClInclude Include="iconv\jisx0201.h" />
+    <ClInclude Include="iconv\jisx0208.h" />
+    <ClInclude Include="iconv\jisx0212.h" />
+    <ClInclude Include="iconv\jisx0213.h" />
+    <ClInclude Include="iconv\johab.h" />
+    <ClInclude Include="iconv\johab_hangul.h" />
+    <ClInclude Include="iconv\koi8_r.h" />
+    <ClInclude Include="iconv\koi8_ru.h" />
+    <ClInclude Include="iconv\koi8_t.h" />
+    <ClInclude Include="iconv\koi8_u.h" />
+    <ClInclude Include="iconv\ksc5601.h" />
+    <ClInclude Include="iconv\localcharset.h" />
+    <ClInclude Include="iconv\loops.h" />
+    <ClInclude Include="iconv\loop_unicode.h" />
+    <ClInclude Include="iconv\loop_wchar.h" />
+    <ClInclude Include="iconv\mac_arabic.h" />
+    <ClInclude Include="iconv\mac_centraleurope.h" />
+    <ClInclude Include="iconv\mac_croatian.h" />
+    <ClInclude Include="iconv\mac_cyrillic.h" />
+    <ClInclude Include="iconv\mac_greek.h" />
+    <ClInclude Include="iconv\mac_hebrew.h" />
+    <ClInclude Include="iconv\mac_iceland.h" />
+    <ClInclude Include="iconv\mac_roman.h" />
+    <ClInclude Include="iconv\mac_romania.h" />
+    <ClInclude Include="iconv\mac_thai.h" />
+    <ClInclude Include="iconv\mac_turkish.h" />
+    <ClInclude Include="iconv\mac_ukraine.h" />
+    <ClInclude Include="iconv\mulelao.h" />
+    <ClInclude Include="iconv\nextstep.h" />
+    <ClInclude Include="iconv\pt154.h" />
+    <ClInclude Include="iconv\relocatable.h" />
+    <ClInclude Include="iconv\riscos1.h" />
+    <ClInclude Include="iconv\rk1048.h" />
+    <ClInclude Include="iconv\shift_jisx0213.h" />
+    <ClInclude Include="iconv\sjis.h" />
+    <ClInclude Include="iconv\tcvn.h" />
+    <ClInclude Include="iconv\tds565.h" />
+    <ClInclude Include="iconv\tis620.h" />
+    <ClInclude Include="iconv\translit.h" />
+    <ClInclude Include="iconv\ucs2.h" />
+    <ClInclude Include="iconv\ucs2be.h" />
+    <ClInclude Include="iconv\ucs2internal.h" />
+    <ClInclude Include="iconv\ucs2le.h" />
+    <ClInclude Include="iconv\ucs2swapped.h" />
+    <ClInclude Include="iconv\ucs4.h" />
+    <ClInclude Include="iconv\ucs4be.h" />
+    <ClInclude Include="iconv\ucs4internal.h" />
+    <ClInclude Include="iconv\ucs4le.h" />
+    <ClInclude Include="iconv\ucs4swapped.h" />
+    <ClInclude Include="iconv\uhc_1.h" />
+    <ClInclude Include="iconv\uhc_2.h" />
+    <ClInclude Include="iconv\utf16.h" />
+    <ClInclude Include="iconv\utf16be.h" />
+    <ClInclude Include="iconv\utf16le.h" />
+    <ClInclude Include="iconv\utf32.h" />
+    <ClInclude Include="iconv\utf32be.h" />
+    <ClInclude Include="iconv\utf32le.h" />
+    <ClInclude Include="iconv\utf7.h" />
+    <ClInclude Include="iconv\utf8.h" />
+    <ClInclude Include="iconv\vietcomb.h" />
+    <ClInclude Include="iconv\viscii.h" />
+    <ClInclude Include="include\ILexer.h" />
+    <ClInclude Include="include\Platform.h" />
+    <ClInclude Include="include\SciLexer.h" />
+    <ClInclude Include="include\Scintilla.h" />
+    <ClInclude Include="include\Sci_Position.h" />
+    <ClInclude Include="lexlib\Accessor.h" />
+    <ClInclude Include="lexlib\CharacterCategory.h" />
+    <ClInclude Include="lexlib\CharacterSet.h" />
+    <ClInclude Include="lexlib\LexAccessor.h" />
+    <ClInclude Include="lexlib\LexerBase.h" />
+    <ClInclude Include="lexlib\LexerModule.h" />
+    <ClInclude Include="lexlib\LexerNoExceptions.h" />
+    <ClInclude Include="lexlib\LexerSimple.h" />
+    <ClInclude Include="lexlib\OptionSet.h" />
+    <ClInclude Include="lexlib\PropSetSimple.h" />
+    <ClInclude Include="lexlib\SparseState.h" />
+    <ClInclude Include="lexlib\StringCopy.h" />
+    <ClInclude Include="lexlib\StyleContext.h" />
+    <ClInclude Include="lexlib\SubStyles.h" />
+    <ClInclude Include="lexlib\WordList.h" />
+    <ClInclude Include="src\AutoComplete.h" />
+    <ClInclude Include="src\CallTip.h" />
+    <ClInclude Include="src\CaseConvert.h" />
+    <ClInclude Include="src\CaseFolder.h" />
+    <ClInclude Include="src\Catalogue.h" />
+    <ClInclude Include="src\CellBuffer.h" />
+    <ClInclude Include="src\CharClassify.h" />
+    <ClInclude Include="src\ContractionState.h" />
+    <ClInclude Include="src\Decoration.h" />
+    <ClInclude Include="src\Document.h" />
+    <ClInclude Include="src\EditModel.h" />
+    <ClInclude Include="src\Editor.h" />
+    <ClInclude Include="src\EditView.h" />
+    <ClInclude Include="src\ExternalLexer.h" />
+    <ClInclude Include="src\FontQuality.h" />
+    <ClInclude Include="src\Indicator.h" />
+    <ClInclude Include="src\KeyMap.h" />
+    <ClInclude Include="src\LineMarker.h" />
+    <ClInclude Include="src\MarginView.h" />
+    <ClInclude Include="src\Partitioning.h" />
+    <ClInclude Include="src\PerLine.h" />
+    <ClInclude Include="src\Position.h" />
+    <ClInclude Include="src\PositionCache.h" />
+    <ClInclude Include="src\RESearch.h" />
+    <ClInclude Include="src\RunStyles.h" />
+    <ClInclude Include="src\ScintillaBase.h" />
+    <ClInclude Include="src\Selection.h" />
+    <ClInclude Include="src\SplitVector.h" />
+    <ClInclude Include="src\Style.h" />
+    <ClInclude Include="src\UnicodeFromUTF8.h" />
+    <ClInclude Include="src\UniConversion.h" />
+    <ClInclude Include="src\ViewStyle.h" />
+    <ClInclude Include="src\XPM.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
