@@ -194,7 +194,7 @@ public:
 #else
 		if ( (int)cd > 0 ) {
 #endif
-			int r = iconv(cd,(const char**)pin,(size_t *)&inlen,pout,(size_t *)&len);
+			int r = iconv(cd,(char**)pin,(size_t *)&inlen,pout,(size_t *)&len);
 			if ( r < 0 ) return 0;
 			return outlen-len;
 		} else {
