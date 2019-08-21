@@ -14,7 +14,7 @@
     <ProjectGuid>{A2FDC884-C512-45F1-A358-A4BB40581C52}</ProjectGuid>
     <RootNamespace>SciLexer</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup>
@@ -94,7 +94,11 @@
   <ItemGroup>
     <ClInclude Include="Fl_Scintilla.h" />
     <ClInclude Include="PlatFLTK.h" />
-    <ClInclude Include="..\include\*.h" />
+    <ClInclude Include="..\include\ILexer.h" />
+    <ClInclude Include="..\include\Platform.h" />
+    <ClInclude Include="..\include\SciLexer.h" />
+    <ClInclude Include="..\include\Scintilla.h" />
+    <ClInclude Include="..\include\Sci_Position.h" />
     <ClInclude Include="..\src\*.h" />
     <ClInclude Include="..\lexlib\*.h" />
   </ItemGroup>

@@ -1,19 +1,18 @@
 // Copyright 2015-2016 by cyantree <cyantree.guo@gmail.com>
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <errno.h>
-
-#ifdef __MWERKS__
-# define FL_DLL
-#endif
+#include <stdio.h>
 
 #include "Scintilla.h"
+#include "SciLexer.h"
+#include "ILexer.h"
+
 #include "fltk/Fl_Scintilla.h"
 
 #include <FL/Fl.H>
+#include <FL/Enumerations.H>
 #include <FL/x.H> // for fl_open_callback
 #include <FL/Fl_Group.H>
 #include <FL/Fl_Double_Window.H>

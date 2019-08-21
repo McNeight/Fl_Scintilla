@@ -14,6 +14,9 @@
 // PLAT_WIN = Win32 API on Win32 OS
 // PLAT_WX is wxWindows on any supported platform
 // PLAT_TK = Tcl/TK on Linux or Win32
+// PLAT_FLTK = FLTK on Linux, macos, or Win32
+// PLAT_FLTK_WIN32 is defined additionally when running PLAT_FLTK under Win32
+// PLAT_FLTK_MACOSX is defined additionally when running PLAT_FLTK under macos
 
 #define PLAT_GTK 0
 #define PLAT_GTK_WIN32 0
@@ -25,6 +28,9 @@
 #define PLAT_FOX 0
 #define PLAT_CURSES 0
 #define PLAT_TK 0
+#define PLAT_FLTK 0
+#define PLAT_FLTK_WIN32 0
+#define PLAT_FLTK_MACOSX 0
 
 #if defined(FOX)
 #undef PLAT_FOX
@@ -58,6 +64,20 @@
 #if defined(__APPLE__)
 #undef PLAT_GTK_MACOSX
 #define PLAT_GTK_MACOSX 1
+#endif
+
+#elif defined(FLTK)
+#undef PLAT_FLTK
+#define PLAT_FLTK 1
+
+#if defined(__WIN32__) || defined(_MSC_VER)
+#undef PLAT_FLTK_WIN32
+#define PLAT_FLTK_WIN32 1
+#endif
+
+#if defined(__APPLE__)
+#undef PLAT_FLTK_MACOSX
+#define PLAT_FLTK_MACOSX 1
 #endif
 
 #elif defined(__APPLE__)
